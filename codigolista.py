@@ -29,14 +29,14 @@ while True:
                      os.system('cls')
                      print('Lista completa:')
                      for i,ordenar in enumerate(carrinho):
-                            print(i,'-', ordenar)
+                            print(f'{i} - {ordenar}')
                      
               elif escolher_acao.lower() == 's':
                      os.system('cls')
                      print('Lista finalizada.')
                      for i,ordenar in enumerate(carrinho):
-                            print(i,'-', ordenar)
-                     print('\n Saindo do Programa. \n','Boas Compras! \n')
+                            print(f'{i} - {ordenar}')
+                     print('\n Saindo do Programa. \n','Boas Compras!\U0001f600 \n')
                      break 
        except:
               print('Erro desconhecido ou o produto descrito não está no carrinho.')
