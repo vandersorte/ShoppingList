@@ -3,6 +3,7 @@ import getpass
 import os
 
 print('\n            --- LISTA DE COMPRAS ---  \n')
+
 carrinho = []
 
 while True:
