@@ -4,39 +4,39 @@ import os
 
 print('\n            --- LISTA DE COMPRAS ---  \n')
 
-carrinho = []
+listing = []
 
 while True:
        
        try:
-              escolher_acao = getpass.getpass('\n [A] anotar | [D] deletar | [V] visualizar | [S] sair \n \n ')
+              choose_action = getpass.getpass('\n [A] anotar | [D] deletar | [V] visualizar | [S] sair \n \n ')
 
-              if escolher_acao.lower() != 'a' and escolher_acao.lower() != 'd' and escolher_acao.lower() != 'v' and escolher_acao.lower() != 's':
+              if choose_action.lower() != 'a' and choose_action.lower() != 'd' and choose_action.lower() != 'v' and choose_action.lower() != 's':
                      print('Escolha umas das opções.')
 
-              elif escolher_acao.lower() == 'a':
-                     anotar = input('Anotar: ')
+              elif choose_action.lower() == 'a':
+                     note = input('Anotar: ')
                      os.system('cls')
-                     carrinho.append(anotar.lower())
-                     print(f'{anotar} Anotado.')
+                     listing.append(note.lower())
+                     print(f'{note} Anotado.')
                      
-              elif escolher_acao.lower() == 'd':
-                     deletar = input('Deletar: ')
+              elif choose_action.lower() == 'd':
+                     delete = input('Deletar: ')
                      os.system('cls')
-                     carrinho.remove(deletar.lower())
-                     print(f'{deletar} Deletado.')
+                     listing.remove(delete.lower())
+                     print(f'{delete} Deletado.')
                      
-              elif escolher_acao.lower() == 'v':
+              elif choose_action.lower() == 'v':
                      os.system('cls')
                      print('Lista completa:')
-                     for i,ordenar in enumerate(carrinho):
-                            print(f'{i} - {ordenar}')
+                     for index, order in enumerate(listing):
+                            print(f'{index} - {order}')
                      
-              elif escolher_acao.lower() == 's':
+              elif choose_action.lower() == 's':
                      os.system('cls')
                      print('Lista finalizada.')
-                     for i,ordenar in enumerate(carrinho):
-                            print(f'{i} - {ordenar}')
+                     for index, order in enumerate(listing):
+                            print(f'{index} - {order}')
                      print('\n Saindo do Programa. \n','Boas Compras!\U0001f600 \n')
                      break 
        except:
