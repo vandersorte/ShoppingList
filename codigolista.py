@@ -39,6 +39,4 @@ while True:
                      print('\n Saindo do Programa. \n','Boas Compras!\U0001f600 \n')
                      break 
        except Exception:
-              print('Erro desconhecido.')
-       except:
-              print('Produto descrito não está no carrinho.')
+              print('Erro desconhecido ou produto descrito não está no carrinho.')
