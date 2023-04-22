@@ -7,7 +7,6 @@ print('\n            --- LISTA DE COMPRAS ---  \n')
 listing = []
 
 while True:
-       
        try:
               choose_action = getpass.getpass('\n [A] anotar | [D] deletar | [V] visualizar | [S] sair \n \n ')
 
