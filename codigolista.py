@@ -40,4 +40,4 @@ while True:
                      print('\n Saindo do Programa. \n','Boas Compras!\U0001f600 \n')
                      break 
        except:
-              print('Erro desconhecido ou o produto descrito não está no carrinho.')
+              print('Produto descrito não está no carrinho.')
