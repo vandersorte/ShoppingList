@@ -12,7 +12,7 @@ while True:
               choose_action = getpass.getpass('\n [A] anotar | [D] deletar | [V] visualizar | [S] sair \n \n ')
 
               if choose_action.lower() != 'a' and choose_action.lower() != 'd' and choose_action.lower() != 'v' and choose_action.lower() != 's':
-                     print('Escolha umas das opções.')
+                     print('Erro de digitação, escolha umas das opções.')
 
               elif choose_action.lower() == 'a':
                      note = input('Anotar: ')
