@@ -39,5 +39,7 @@ while True:
                             print(f'{index} - {order}')
                      print('\n Saindo do Programa. \n','Boas Compras!\U0001f600 \n')
                      break 
+       except Exception:
+              print('Erro desconhecido.')
        except:
               print('Produto descrito não está no carrinho.')
